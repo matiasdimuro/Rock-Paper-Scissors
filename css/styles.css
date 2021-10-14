@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
+* {
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    box-sizing: border-box;
+    color: #fff;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #262626;
+}
+
+.conteiner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+}
+
+/* ==================== */
+/* CONTENEDOR DEL JUEGO */
+/* ==================== */
+
+main {
+    width: 50vw;
+    display: flex;
+    margin: 1.5em auto;
+}
+
+/* Puntajes */
+.score-container {
+    width: 20%;
+    height: auto;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.score-container > img {
+    margin-top: .5em;
+    width: 4rem;
+    height: 4rem;
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.score-container > .score > img {
+    width: 6rem;
+    height: 6rem;
+}
+
+.score {
+    background-color: #333333;
+    padding: 1em;
+}
+
+/* Eleccion del Juego */
+.choose-container {
+    width: 60%;
+    height:auto;
+    margin: 0 3.5em;
+    background-color: #333333;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.choose {
+    margin: 2em auto;
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.buttons > img {
+    width: 4rem;
+    height: 4rem;
+    cursor: pointer;
+}
+
+/* ==================== */
+/* TITULO y ENCABEZADO */
+/* ==================== */
+
+nav, footer {
+    background-color: #333333;
+    font-size: 2em;
+    font-weight: bold;
+    padding: .7em;
+}
+
+footer {
+    display: none;
+}

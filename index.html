@@ -5,14 +5,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./drawables/logo2.ico"/>
+    <link rel="stylesheet" href="./css/styles.css">
     <title>Rock, Paper or Scissors</title>
 </head>
 <body>
-    <div class="container">
-        
+    
+    <div class="conteiner">
+        <nav>Rock, Paper or Scissors Game!</nav>
+        <main>
+           <section class="score-container">
+               <div class="score">
+                   <img src="./drawables/usuario.png" alt="foto usuario">
+                   <p id="userName">Player X</p>
+                   <p id="userScore">0</p>
+              </div>
+              <img id="userChoose" src="./drawables/piedra.png"/>
+          </section>
+
+         <section class="choose-container">
+                <div class="choose">
+                    <div class="buttons">
+                       <img src="./drawables/piedra.png" onclick="choose   ('rock')"/>
+                      <p>Rock</p>
+                  </div>
+                 <div class="buttons">
+                        <img src="./drawables/papel.png" onclick="choose    ('paper')"/>
+                        <p>Paper</p>
+                    </div>
+                    <div class="buttons">
+                       <img src="./drawables/tijera.png" onclick="choose('scissors')"/>
+                     <p>Scissors</p>
+                 </div>
+                </div>
+            </section>
+
+            <section class="score-container">
+                <div class="score">
+                 <img src="./drawables/ia.png" alt="foto IA">
+                 <p>IA</p>
+                 <p id="IAScore">0</p>
+             </div>
+                <img id="IAChoose" src="./drawables/piedra.png"/>
+            </section>
+        </main>
+        <footer>Ha ganado el usuario Juan!</footer>
     </div>
-    <!-- <img src="./drawables/piedra.png"/>
-    <img src="./drawables/papel.png"/>
-    <img src="./drawables/tijera.png"/> -->
+
+    <script src="./js/app.js" text="text/javascript"></script>
 </body>
 </html>
